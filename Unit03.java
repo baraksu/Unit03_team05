@@ -40,8 +40,17 @@ public class Unit03{
     public static String shiftRight(String s)    {
         return "";
     }
-    public static String shiftLeft(String s)    {
-        return "";
+    public static String shiftLeft(String shiftleft)    {
+        int len = shiftleft.length();
+        if (shiftleft == "") {
+            System.out.println(shiftleft);
+        } else {
+            String firstletter = shiftleft.substring(0,1);
+            shiftleft = shiftleft.substring(1,len);
+            shiftleft = (shiftleft + firstletter);        
+            System.out.println(shiftleft);
+        }
+        return shiftleft;
     }
     public static String shiftLeft(String s, int k)    {
         return "";
