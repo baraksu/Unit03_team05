@@ -3,10 +3,28 @@ public class Unit03{
     public static int shiftRight(int num)    {
         return -1;
     }
-    public static int shiftRight(int num, int k){
+    public static int shiftRight(int num, int k) {
+    
+    if (num < 1000 || num > 9999)
         return -1;
-    }
-   
+
+    
+    if (k < 0 || k > 4)
+        return -1;
+
+    
+    if (k == 0 || k == 4)
+        return num;
+
+    int powK =  (int) Math.pow(10, k);       
+    int powNK = (int) Math.pow(10, 4 - k); 
+
+    int lastK = num % powK;  
+    int firstPart = num / powK; 
+
+    return lastK * powNK + firstPart;
+}
+}
     public static int shiftLeft(int num)    {
         return -1;
     }
