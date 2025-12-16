@@ -26,7 +26,13 @@ public class Unit03{
 }
 }
     public static int shiftLeft(int num)    {
+    if (num < 1000 || num > 9999)
         return -1;
+
+    int firstDigit = num / 1000;   
+    int rest = num % 1000;         
+
+    return rest * 10 + firstDigit;
     }
     public static int shiftLeft(int num, int k){
         return -1;
