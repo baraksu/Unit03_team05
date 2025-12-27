@@ -1,4 +1,4 @@
-public class Unit03{
+public class Unit03{  
     
     public static int shiftRight(int num)    {
         return -1;
